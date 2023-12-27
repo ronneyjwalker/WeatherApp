@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="enter_a_location">Enter a Location</string>
+    <string name="for_us_locations">For US locations, enter as \'City\', or \'City, State\'</string>
+    <string name="for_international_locations">For international locations, enter as \'City, Country\'</string>
+    <string name="_8am">8am</string>
+    <string name="_1pm">1pm</string>
+    <string name="_5pm">5pm</string>
+    <string name="_11pm">11pm</string>
+</resources>

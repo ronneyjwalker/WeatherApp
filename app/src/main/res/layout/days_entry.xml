@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dateDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:padding="1dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateDays" />
+
+    <TextView
+        android:id="@+id/descDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/daysImageView"
+        app:layout_constraintStart_toStartOf="@+id/tempDays"
+        app:layout_constraintTop_toBottomOf="@+id/tempDays" />
+
+    <ImageView
+        android:id="@+id/daysImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/descDays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tempDays" />
+
+    <TextView
+        android:id="@+id/precDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/descDays"
+        app:layout_constraintTop_toBottomOf="@+id/descDays" />
+
+    <TextView
+        android:id="@+id/uvIndexDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/precDays"
+        app:layout_constraintTop_toBottomOf="@+id/precDays" />
+
+    <TextView
+        android:id="@+id/mornTempDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/afterTempDays"
+        app:layout_constraintStart_toStartOf="@+id/uvIndexDays"
+        app:layout_constraintTop_toBottomOf="@+id/uvIndexDays" />
+
+    <TextView
+        android:id="@+id/afterTempDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/evenTempDays"
+        app:layout_constraintStart_toEndOf="@+id/mornTempDays"
+        app:layout_constraintTop_toTopOf="@+id/mornTempDays" />
+
+    <TextView
+        android:id="@+id/evenTempDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nightTempDays"
+        app:layout_constraintStart_toEndOf="@+id/afterTempDays"
+        app:layout_constraintTop_toTopOf="@+id/afterTempDays" />
+
+    <TextView
+        android:id="@+id/nightTempDays"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/evenTempDays"
+        app:layout_constraintTop_toTopOf="@+id/evenTempDays" />
+
+    <TextView
+        android:id="@+id/mornTextDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/morning"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mornTempDays"
+        app:layout_constraintStart_toStartOf="@+id/mornTempDays"
+        app:layout_constraintTop_toBottomOf="@+id/mornTempDays" />
+
+    <TextView
+        android:id="@+id/afterTextDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/afternoon"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/afterTempDays"
+        app:layout_constraintStart_toStartOf="@+id/afterTempDays"
+        app:layout_constraintTop_toBottomOf="@+id/afterTempDays" />
+
+    <TextView
+        android:id="@+id/evenTextDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evening"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/evenTempDays"
+        app:layout_constraintStart_toStartOf="@+id/evenTempDays"
+        app:layout_constraintTop_toBottomOf="@+id/evenTempDays" />
+
+    <TextView
+        android:id="@+id/nightTextDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/night"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nightTempDays"
+        app:layout_constraintStart_toStartOf="@+id/nightTempDays"
+        app:layout_constraintTop_toBottomOf="@+id/nightTempDays" />
+</androidx.constraintlayout.widget.ConstraintLayout>
